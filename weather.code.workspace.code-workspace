@@ -3,5 +3,8 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"python.pythonPath": "C:\\Users\\lenovo\\.virtualenvs\\weather-CxQpnAnr\\Scripts\\python.exe"
+	}
 }
