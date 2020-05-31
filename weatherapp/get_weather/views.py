@@ -19,4 +19,4 @@ def index(request):
 
     context={'cweather':cweather}
     
-    return render (request,'landing.html'context)
+    return render (request,'landing.html',context)
