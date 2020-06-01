@@ -17,7 +17,11 @@ def index(request):
                     new_place=form.cleaned_data['name']
                     existing_pcount=Place.objects.filter(name=new_place).count()
                     if existing_pcount==0:
-                            form.save()
+                            res=request.get(url.format(new_place)).json()
+                            if res['cod']==200:
+                                    form.save()
+                            else:
+                                err_msg='no such place exist'
                             
 
                     else:
