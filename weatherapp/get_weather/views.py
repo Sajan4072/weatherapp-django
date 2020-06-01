@@ -7,10 +7,21 @@ def index(request):
 
 
     url='http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=41cf57a23a0785ed1c0f028ac06962d9'
+    err_msg=''
 
     if request.method =='POST':
             form=PlaceForm(request.POST)
-            form.save()
+            
+
+            if form.is_valid():
+                    new_place=form.cleaned_data['name']
+                    existing_pcount=Place.objects.filter(name=new_place).count()
+                    if existing_pcount==0:
+                            form.save()
+                            
+
+                    else:
+                        err_msg='Place already exist'     
     
 
     form=PlaceForm()
