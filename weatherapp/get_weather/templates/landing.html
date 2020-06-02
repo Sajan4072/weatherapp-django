@@ -32,8 +32,7 @@
                             </div>
                             <div class="control">
                                 <button type="submit" class="button is-info">
-                                    Add City
-                                </button>
+                                    Add Place                                </button>
                             </div>
                         </div>
                         {% if message %}
@@ -69,7 +68,7 @@
                                 </div>
                             </div>
                             <div class="media-right">
-                                <a href="#">
+                                <a href="{% url 'delete_place' cweather.city %}">
                                     <button class="delete"></button>
                                 </a>
                             </div>

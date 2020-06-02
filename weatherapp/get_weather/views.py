@@ -1,5 +1,5 @@
 import requests
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from .models import Place
 from .forms import PlaceForm
 
@@ -68,3 +68,7 @@ def index(request):
      
      
    
+def delete_place(request,place_name):
+        Place.objects.get(name=place_name).delete()
+
+        return redirect('index')
