@@ -2,10 +2,10 @@
 ## Packages
 .Requests
 
-## setting up the project
-use pipenv for virtual environment \
+## Setting up the project
+Use pipenv for virtual environment \
 `pipenv install --dev`\
-if virtual enviroment is already activated\
+If virtual enviroment is already activated\
 `pipenv sync`\
-or\
+Or\
 `pipenv sync --dev`
