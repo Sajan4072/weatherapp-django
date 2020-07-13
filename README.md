@@ -4,8 +4,8 @@
 
 ## Setting up the project
 - Use pipenv for virtual environment \
-`pipenv install --dev`\
+`pipenv install --dev`
 - If virtual enviroment is already activated\
-`pipenv sync         `\
+`pipenv sync         `
 - Or\
 `pipenv sync --dev   `
