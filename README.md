@@ -1,3 +1,4 @@
+weatherapp is a django project that shows the weather of different cities using JSON based API of openweathermap.org using Requests library.
 # weatherapp-django
 ## Packages
 - Requests
