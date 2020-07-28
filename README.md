@@ -10,3 +10,7 @@ weatherapp is a django project that shows the weather of different cities using 
 `pipenv sync         `
 - Or\
 `pipenv sync --dev   `
+
+
+## app
+![](weather1.PNG)
